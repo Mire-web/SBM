@@ -7,4 +7,4 @@ The SBM is a single page application with checkboxes, simply check a box to get 
 sample input shown here
 [Sample Image](./beatmakersample.PNG)
 
-to use the app click [here]()
+to use the app click [here]('https://sbmh.netlify.app/')
