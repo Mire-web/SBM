@@ -8,3 +8,4 @@ sample input shown here
 [Sample Image](./beatmakersample.PNG)
 
 to use the app click [here]('https://sbmh.netlify.app/')
+click on the Lock icon left of the web address and access site settings and allow sounds
