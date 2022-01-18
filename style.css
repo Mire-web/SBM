@@ -88,7 +88,22 @@ a:hover{
     left: 0;
     margin: 0;
     width: 100vw;
-    background-image: linear-gradient(
+    background: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(252, 15, 192, 0.3),
+      rgba(136, 136, 206, 0.7)
+    ), url('./nikolai-chernichenko-QOLyehGXRyA-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.start::before{
+    content: "";
+    opacity: 0.4;
+    background: linear-gradient(
       115deg,
       rgba(58, 58, 158, 0.8),
       rgba(252, 15, 192, 0.3),
