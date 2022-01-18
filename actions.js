@@ -82,4 +82,3 @@ function sequencer(){
         index ++;
     }
 }
-sequencer()
