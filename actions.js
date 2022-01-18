@@ -1,10 +1,10 @@
 console.clear();
 
 if(Tone.context.state !== 'running'){
-        $('.start').show()
+        document.querySelector('.start').style.display = 'block'
         document.querySelector('#start').addEventListener('click', function(){
             Tone.context.resume().then(()=>{
-                $('.start').hide();
+                document.querySelector('.start').style.display = 'none'
                 sequencer();
             });
         });
