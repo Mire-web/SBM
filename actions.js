@@ -1,3 +1,17 @@
+console.clear();
+
+if(Tone.context.state !== 'running'){
+        document.querySelector('.start').show()
+        document.querySelector('#start').addEventListener('click', function(){
+            Tone.context.resume().then(()=>{
+                document.querySelector('.start').hide();
+                sequencer();
+            });
+        });
+    }else{
+        sequencer();
+    }
+
 function sequencer(){
     const kick = new Tone.Player('./drums/kick-electro01.wav').toMaster();
     const snare = new Tone.Player('./drums/snare-lofi02.wav').toMaster();
@@ -12,14 +26,6 @@ function sequencer(){
     let index = 0;
     
     Tone.Transport.scheduleRepeat(repeat, '16n')
-    if(Tone.context.state !== 'running'){
-        document.querySelector('.start').show()
-        document.querySelector('#start').addEventListener('click', function(){
-            Tone.context.resume().then(()=>{
-                document.querySelector('.start').hide()
-            })
-        })
-    }
     Tone.Transport.start();
 
     function repeat(){
